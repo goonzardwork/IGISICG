@@ -9,7 +9,7 @@
 
 <p>
 
-    This document provides coding convention for IGIS Data Lab Python codes. This style is meant to prevent __unreadable__ codes that Python users mostly face. Most styles are directly implemented from PEP 8. This documents tackles other specific things
+This document provides coding convention for IGIS Data Lab Python codes. This style is meant to prevent __unreadable__ codes that Python users mostly face. Most styles are directly implemented from PEP 8. This documents tackles other specific things
 
 </p>
 
@@ -18,20 +18,20 @@
 
 <p>
 
-    Please store global constant on a different file. Constants will use all capital letters with underscores separating words like so
+Please store global constant on a different file. Constants will use all capital letters with underscores separating words like so
 
     ```python
     MAX_OVERFLOW = 32
     ```
 
-    Constants will not take calculated values or function-returned values. Following is a wrong example
+Constants will not take calculated values or function-returned values. Following is a wrong example
 
     ```python
     NOT_CONSTANT = 32 + 10
     ALSO_NOT_CONSTANT = foo()
     ```
 
-    Also store constant on a separate file from the main script. 
+Also store constant on a separate file from the main script. 
 
     ```python
     # c.py
@@ -53,7 +53,7 @@
 
 <p>
 
-    Please, please be sure to comment your work. PEP 8 says something about in-line comment and separated line comment, but ICG(IGIS Code Guide) couldn't care less.
+Please, please be sure to comment your work. PEP 8 says something about in-line comment and separated line comment, but ICG(IGIS Code Guide) couldn't care less.
 
     ```python
     def foo():
@@ -61,7 +61,7 @@
         return 42  # comment here is also fine
     ```
 
-    However, be sure to add 2 blank spaces when you put in-line comment. Also, comment with "#" between script, ICG recommends you start your comment with lower cases. Follwing is a __wrong example
+However, be sure to add 2 blank spaces when you put in-line comment. Also, comment with "#" between script, ICG recommends you start your comment with lower cases. Follwing is a __wrong example
 
     ```python
     def bar():
@@ -76,7 +76,7 @@
 
 <p>
 
-    I'm not implementing Variable Annotaion, introduced in PEP 526, which tends to make each code line longer. Instead, in function, I'm implementing argument type annotaion. Every function that takes an arguments should be written like so. Also, every function that returns a value should explicitly write their data type like so.
+I'm not implementing Variable Annotaion, introduced in PEP 526, which tends to make each code line longer. Instead, in function, I'm implementing argument type annotaion. Every function that takes an arguments should be written like so. Also, every function that returns a value should explicitly write their data type like so.
 
     ```python
     # this is right
