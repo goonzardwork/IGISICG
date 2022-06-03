@@ -9,7 +9,7 @@
 
 <p>
 
-This document provides coding convention for IGIS Data Lab Python codes. This style is meant to prevent __unreadable__ codes that Python users mostly face. Most styles are directly implemented from PEP 8. This documents tackles other specific things
+This document provides coding convention for IGIS Data Lab Python codes. This style is meant to  prevent __unreadable__ codes that Python users mostly face. Most styles are directly implemented from PEP 8. This documents tackles other specific things. Mainly, this document is trying to say: please keep it readable and simple.
 
 </p>
 
@@ -72,6 +72,30 @@ def bar():
 </p>
 
 
+#### Length of Single Line
+
+<p>
+
+Please put in your effort to limit your code's maximum length to 79 characters. Limiting your code's maximum length enables coders to put and compare their code side by side. However, 79 characters will not include in-line comments. 
+
+```python
+# this is wrong
+def foo(arg1: int, arg2: int, arg3: int, arg4: str, arg5: set):
+    ...
+
+# this is correct
+def foo(arg1: int, 
+        arg2: int, 
+        arg3: int, 
+        arg4: str, 
+        arg5: set):
+    # looks odd but this is correct
+    ...
+```
+
+</p>
+
+
 #### Functions
 
 <p>
@@ -92,6 +116,76 @@ def foo(arg1):
 
 def foo(arg1: str):
     return 'bar'
+```
+
+
+</p>
+
+
+#### Project Should Have...
+
+<p>
+
+All projects in the repository should have the followings. (The Exact file name)
+
+* README.md
+* CHANGELOG.md
+
+```
+## CHANGE LOG
+
+### [Unreleased Version] - YYYY - MM - DD
+
+<p>
+
+Write your change here. - This line will also be your commit message
+
+</p>
+
+##### Added
+
+<p>
+
+</p>
+
+##### Changed
+
+<p>
+
+</p>
+
+##### Fixed
+
+<p>
+
+</p>
+```
+
+
+* LICENSE - mainly MIT LICENSE
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2016 Purpleworks
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
 
